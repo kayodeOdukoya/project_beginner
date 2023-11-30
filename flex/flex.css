@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#wrapper{
+    background-color: grey;
+}
+
+/* To display side by side */
+
+nav{
+    border: .2rem solid ridge;
+    /* To change the default display format which is block format */
+    /* we chanmge to flex format because flex is flexible */
+
+    display: flex;
+
+    justify-content: space-between;
+
+    /* To change the arrangement direction USING Flex Direction */
+    /* flex-direction: column; */
+
+
+    /* Column reveerse is to take the login button up */
+    /* flex-direction: column-reverse; */
+
+    /* row reverse takes everything on the reverse side */
+
+    /* flex-direction: row-reverse; */
+
+}
+
+ul{
+    display: flex;
+    margin: auto;
+
+}
+
+li{
+    list-style: none;
+    margin: 10%;
+}

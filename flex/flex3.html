@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex properties</title>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="" class="number">1</div>
+        <div id="" class="number">2</div>
+        <div id="" class="number">3</div>
+        <div id="" class="number">4</div>
+        <div id="" class="number">5</div>
+    </div>
+    <style>
+
+        /* Reset from meyer web */
+        
+            html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+
+
+/* End of Meyer web */
+
+/* Beginning of my Styling */
+
+        }
+        #wrapper{
+            background-color: grey;
+
+            /* To make the display side by side */
+            display: flex;
+
+            /* Justify content makes them have spaces between them */
+            justify-content: space-between;
+
+            /* To set the wrapper to landing page or to remove scroll bar: it's used in E-commerce for customers to view the items at a go */
+            height: 100vh;
+
+            /* To make the items comes to the center of the page or parent */
+            align-items: center;
+
+            /*To make the items comes to the bottom of the page or parent  */
+            /* align-items: flex-end; */
+
+            /* Remain at the top */
+            /* align-items: flex-start; */
+
+           
+        
+        }
+        #wrapper>.number{
+            border: .2rem solid green;
+
+            /* to limit the width of the child from occupying the whole page of the parent. */
+            width: 3%;
+
+            /* to limit the heiht of the child from occupying the whole page of the parent. */
+            height: 3%;
+            padding: 2rem;
+        }
+
+
+         /* To make some to be at the top and some at the bottom */
+        #wrapper>.number:last-child{
+            /* background-color: red; */
+
+            background-color: blue;
+
+
+            /* To make it bigger than the rest childrens */
+            /* flex: 20%; */
+
+            /* or flex basis: It will makes it space himself and enlarge without affecting the parent*/
+            flex-basis: 20%; /*200px;*/
+
+            font-size: 200%;
+            color: green;
+
+            /*To break into new lines or break into new line */
+            text-wrap: wrap;
+
+        }
+
+        /* To make the fist child goes to the last part */
+        #wrapper>.number:first-child{
+            /* order: 4; */
+            /* flex-shrink: 1; */
+
+            /* To put 1 up and makes it move to the position of 5 */
+            /* To take it up */
+            align-self: flex-start;
+
+            /* To take it to the position of 5 */
+            order: 5;
+
+            background-color: gold;
+        }
+
+        /* To pick a particular child */
+        #wrapper>.number:nth-child(4){
+            /* background-color: yellow; */
+            background-color: aqua;
+            font-size: 300%;
+            color: red;
+
+            /* To input a scroll */
+            overflow:scroll;
+
+            /* flex grow/shrink: to increase a particular item size */
+            /* flex: .5rem; */
+
+            /* To align the item to go to the top */
+            align-self: flex-start;
+
+            /* To change the position if the childrens */
+            order: 1;
+        }
+
+        /* To bring 2 to the bottom */
+        #wrapper>.number:nth-child(2){
+            align-self: flex-end;
+        }
+
+        /* To bring 1 to the right.... Justify-self: It works for right and left */
+
+        #wrapper>.number:nth-child(1){
+            /* justify-self: flex-end; */
+            
+        }
+
+            /* To make 3 go to the position of 1 */
+        #wrapper>.number:nth-child(3){
+            order: -1;
+        }
+
+    </style>
+    
+</body>
+</html>

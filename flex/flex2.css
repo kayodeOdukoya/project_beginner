@@ -1,0 +1,195 @@
+body{
+    /* background-color: aqua; */
+    /* height: 100vh; */
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    background-color: aliceblue;
+
+    /* side by side */
+
+    display: flex;
+
+    /* To space them */
+
+    justify-content: space-around;
+
+    /* To give space from the right wall */
+    padding: 2rem;
+
+    /* To place at the center -- container and its items*/
+
+    align-items: center;
+
+}
+nav>ul{
+    /* For Home, About etc boarder for proper arrangements and comment it out later */
+    /* border: .2rem solid blue; */
+
+    /* To make it occupied more container or space to avoid scroll bar */
+    flex: 2;
+    /* To make them inline from block/row*/
+
+    display: flex;
+
+    /* To increase the Home, About Container */
+    justify-content: space-around;
+
+    /* To give equal space */
+    padding: 0;
+
+}
+  /* Descendents */
+nav>ul>li{
+    /* border: .2rem solid black; */
+}
+figure{
+    /* border: .2rem solid orangered; */
+
+    /* To make it occupied more container or space */
+    flex: 2;
+
+    /* To centralize the image in it's own container*/
+
+}
+.aside{
+    /* border: .2rem solid grey; */
+    /* flex: 2; */
+}
+
+/* To remove the underline in Home, Press etc */
+nav>ul>li>a{
+    text-decoration: none;
+}
+
+/* For the circle shape icons */
+aside{
+    background-color: grey;
+    width: 30%;
+
+    /* To shape it */
+    border-radius: 50%;
+    /* height: 50vh; */
+
+
+/* To put out text into the shape */
+
+    /* display: flex; */
+
+    padding: 2rem;
+    
+    /* To reposition our icon shape to the right */
+    margin-left: auto;
+    margin-right: 0;
+
+
+}
+aside>p{
+    background-color: black;
+    color: white;
+}
+.section{
+    background-color: white;
+
+    /* To put background image */
+    background: url("https://th.bing.com/th/id/OIP.RHfOFQHnk9MfiEFLTlxEXQHaE8?w=306&h=204&c=7&r=0&o=5&dpr=1.5&pid=1.7"), white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+
+    /* To move the circle image down, just give space from the container from the top */
+    padding-top: 9rem;
+}
+
+section{
+    /* To bring the text to the right */
+    display: flex;
+    background-color: white;
+    align-items: center;
+    justify-content: space-around;
+}
+section>.sidetxt{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 300;
+    /* border: .2rem solid blue; */
+    width: 50%;
+
+}
+
+.segment{
+    display: flex;
+    background-color: white;
+    align-items: flex-start;
+    justify-content: space-around;
+    /* border: .2rem solid red; */
+}
+.content{
+    display: flex;
+    background-color: white;
+   align-items: center;
+}
+
+.content>img{
+    padding-bottom: 50rem;
+}
+
+.two{
+   
+    display: flow-root;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 300;
+    width: 50%;
+    justify-content: space-around
+}
+.two>p{
+    display: flex;
+    text-align: center;
+}
+
+footer{
+    background-color: grey;
+}
+
+#footer>#left{
+    /* border: .2rem solid yellow; */
+   text-align: left;
+
+}
+
+#footer>#right{
+    /* border: .2rem solid blue; */
+    text-align: right;
+}
+
+ul{
+    /* background-color: gold; */
+    /* border: .2rem solid brown; */
+    display: flex;
+    margin: 5%;
+    justify-content: space-between;
+}
+
+ul>li{
+    padding: 1rem;
+}
+
+/* #about{
+    background-color: white;
+    display: flex;
+    align-items: center
+    justify-content:space-around;
+}
+
+#about>section{
+    background-color: white;
+    text-align: center;
+    font-weight: 300;
+    width: 50%;
+} */

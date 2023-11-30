@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+
+    box-sizing: border-box;
+}
+
+body{
+    background-color: yellowgreen;
+}
+
+#wrapper{
+    background-color: green;
+    /* height: 50%;
+    width: 50vw; */
+    /* overflow-y: scroll; Overflow is to hide or scroll up or down etc.\ */  
+
+}
+
+#box1{
+    background-color: grey;
+    border: .2rem solid red;
+    height: 20%;
+    width: 100%;
+    /* overflow: scroll; */
+}
+
+#box1 >p{
+    height: 50%;
+    width: 50%;
+    border: .2rem solid blue;
+}
+#box2{
+    /* height: 500px; */
+    border: .2rem dashed gold;
+    /* width: 200px; */
+}
+#box2>p{
+    font-size: 4rem;
+}

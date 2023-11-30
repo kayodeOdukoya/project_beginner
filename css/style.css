@@ -1,0 +1,22 @@
+body{
+    background-color: goldenrod;
+    color: black;
+}
+
+caption{
+    background-color: yellow;
+    font-size: larger;
+    color: brown;
+}
+
+tr{
+    background-color: yellowgreen;
+}
+
+th{
+    background-color: gray;
+}
+
+td{
+    background-color: ;
+}

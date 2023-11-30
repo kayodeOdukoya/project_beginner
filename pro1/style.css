@@ -1,0 +1,69 @@
+body{
+    margin: 8;
+}
+
+#wrapper{
+    background-color: darkolivegreen;
+}
+nav{
+    /* border-top: 0.2rem;
+    border-left: 0.2rem;
+    border-right: .2rem;
+    border-bottom: .2rem;
+    border-style: ridge;
+    border-width: .2rem;
+    border-color: green; */
+    border: .2rem ridge green;
+    height: 30vh;
+    width: 30vw;
+    background-color: greenyellow;
+    color: blueviolet;
+}
+
+ul{
+    list-style-type: none;
+    border: .2rem solid orangered;
+}
+
+nav > .list_item{
+    color: blue;
+}
+
+ul > li + li {
+    color: goldenrod;
+}
+
+ul > li + li {
+    color: goldenrod;
+}
+
+/* 1st child */
+ul > li:first-child {
+    color: rebeccapurple;
+}
+
+/* 2nd child */
+ul > li:nth-child(2) {
+    color: purple;
+    background-color: goldenrod;
+}
+
+/* 3rd child */
+ul > li:nth-child(3) {
+    color: chocolate;
+   
+}
+
+/* last child */
+ul > li:last-child{
+    color: hotpink;
+}
+
+nav > .list_item:hover{
+    background-color: cadetblue;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+
+
